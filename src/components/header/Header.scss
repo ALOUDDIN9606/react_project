@@ -1,0 +1,230 @@
+.header{
+    &__top{
+        background-color: #1C1814;    
+        padding: 20px 0;
+        .navbar{
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            .icon{
+                font-size: 30px;
+                color: white;
+                display: none;
+                gap: 30px;
+                .search{
+                    color: white;
+    
+                }
+                .search:hover{
+                    color: red;
+                }
+                .icons:hover{
+                    color: red;
+                }
+            }
+             
+            &__left{
+                width: 397px;
+                display: flex;
+                justify-content: space-between;
+                .navbar__link{
+                    width: 100%;
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    .link__a{
+                        letter-spacing: 2px;
+                        color: white;
+                        display: inline-block;
+                        text-decoration: none;
+                        font-size: 18px;
+                        transition: .3s;
+                    }
+                    .link__a:hover{
+                        color: red;
+                    }
+                }           
+            }
+            &__rigth{
+                width: 420px;
+                .navbar__menu{
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    .menu__a{
+                        letter-spacing: 2px;
+                        color: white;
+                        display: inline-block;
+                        text-decoration: none;
+                        font-size: 18px;
+                    }
+                    .menu__a:hover{
+                        color: red;
+                    }
+
+                }
+                .navbar__menu svg{
+                    color: white;
+                    font-size: 20px;
+                    cursor: pointer;
+                }
+                .navbar__menu svg:hover{
+                    color: red;
+                }
+            }
+            .menu__category {
+                color: white;
+                position: fixed;
+                top: 3px;
+                left: -253px;
+                width: 250px; 
+                height: 370px; 
+                background-color: rgba(4, 4, 4, 0.937);
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                transition: transform 0.3s ease;
+                z-index: 1000;
+                box-shadow: 0 0 1px 1px white;
+                border-radius: 5px;
+                a{
+                    display: inline-block;
+                    text-decoration: none;
+                    color: white;
+                    letter-spacing: 3px;
+                    margin: 8px 0;
+                    width: 100%;
+                    text-align: center;
+                    padding: 5px 0;
+                    font-size: 18px;
+                }
+                a:hover{
+                    box-shadow: 0 0 2px 2px white;
+                }
+            }
+              
+            .menu__category.open {
+                transform: translateX(255px); 
+            }
+        }
+    }
+     
+    &__bottom{
+        width: 100%;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: url('../../assets/Rectangle 12.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        .bottom__box{
+            display: flex;
+            align-items: end;
+            justify-content: space-between;
+            padding: 140px 0;
+            .bottom__left{
+                color: white;
+                width: 50%;
+                h1{
+                    font-size: 72px;
+                }
+                p{
+                    font-size: 20px;
+                    line-height: 1.5;
+                    margin: 40px 0;
+                }
+            }
+            .bottom__rigth{
+                position: relative;
+                right: 10%;
+                width: 93px;
+                height: 109px;
+                background-image: url('../../assets/Play.png');
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                
+            }
+        }
+    }
+}
+
+
+@media (max-width: 1000px){
+     .header{
+        &__top{
+            .navbar{
+                &__left{
+                    display: none;
+                }
+                &__rigth{
+                    display: none;
+                }
+                .icon{
+                    display: flex;
+                }
+            }
+        }
+        &__bottom{
+            .bottom__box{
+                justify-content: center;
+                text-align: center;
+                .bottom__rigth{
+                    display: none;
+                }
+                .bottom__left{
+                    width: 100%;
+                    h1{
+                        font-size: 65px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 700px){
+    .header{
+        &__bottom{
+            .bottom__box{
+                .bottom__left{
+                    h1{
+                        font-size: 45px;
+                    }
+                    p{
+                        font-size: 17px;
+                    }
+                    .btn{
+                        padding: 12px 18px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 500px){
+    .header{
+        &__top{
+            .navbar{
+                .icon{
+                    font-size: 23px;
+                }
+            }
+        }
+        &__bottom{
+            .bottom__box{
+                padding: 90px 0;
+                .bottom__left{
+                    h1{
+                        font-size: 38px;
+                    }
+                }
+            }
+        }
+    }
+}

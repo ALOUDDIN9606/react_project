@@ -1,0 +1,33 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+.container{
+    width: 100%;
+    max-width: 1280px;
+    padding: 0 12px;
+    margin: 0 auto;
+}
+.container_2{
+    width: 100%;
+    max-width: 1140px;
+    padding: 0 12px;
+    margin: 0 auto;
+}
+.btn{
+    border: none;
+    width: 202px;
+    background-color: #C99E71;
+    color: white;
+    font-size: 17px;
+    padding: 15px 0;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.btn:hover{
+    background-color: red;
+    box-shadow: 0 0 2px 2px white;
+}
+ 

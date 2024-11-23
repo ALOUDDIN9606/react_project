@@ -1,0 +1,426 @@
+.main_part{
+    background-color: #14110E;
+    width: 100%;
+    .info{
+        padding: 100px 0;
+        .info__box{
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-gap: 40px;
+            .box__left{
+                height: 474px;
+                overflow: hidden;
+                position: relative;
+                p{
+                    color: white;
+                    padding-bottom: 13px;
+                    letter-spacing: 2px;
+                }
+                .leftbox__img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover; 
+                    display: block;
+                    background-image: url('../../assets/Rectangle 4.png');
+                    background-size: cover;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                }
+                .leftbox__img2{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover; 
+                    display: block;
+                    background-image: url('../../assets/Rectangle 4 (1).png');
+                    background-size: cover;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                }
+                .leftbox__img3{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    display: block;
+                    background-image: url('../../assets/Rectangle 4 (2).png');
+                    background-size: cover;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                }
+            }
+        }
+    }
+
+    .desciption{
+        color: white;
+        width: 100%;
+        padding: 100px;
+        .description__boxes{
+            display: grid;
+            grid-template-columns: 1.2fr 1fr;
+            grid-gap: 20px;
+            .images{
+                display: grid;
+                grid-template-columns: 1fr 1fr; 
+                grid-template-rows: repeat(2, 1fr); 
+                gap: 10px;
+                .box__image1{
+                    background-image: url('../../assets/Rectangle 4 (1).png');
+                    background-size: cover;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    width: 100%;
+                    border-radius: 10px;
+                    object-fit: cover; 
+                }
+                .box__image2{
+                    background-image: url('../../assets/Rectangle 14.png');
+                    background-size: cover;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    width: 100%;
+                    border-radius: 10px;
+                    object-fit: cover; 
+                    grid-row: span 2;
+                }
+                .box__image3{
+                    background-image: url('../../assets/Rectangle 4.png');
+                    background-size: cover;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    width: 100%;
+                    border-radius: 10px;
+                    object-fit: cover; 
+                }        
+            }
+            .text{
+                padding: 100px 40px 100px 40px;
+                background-color: #1C1814;
+                h4{
+                    color: #f0a500; /* "Our history" rangi */
+                    margin-bottom: 10px;
+                    font-weight: normal;
+                }
+                h2 {
+                    font-size: 60px;
+                    margin-bottom: 20px;
+                    letter-spacing: 3px;
+                }
+                p {
+                    line-height: 1.8;
+                    letter-spacing: 2px;
+                    color: rgba(255, 255, 255, 0.447);
+                }
+            }
+        }
+    }
+
+    .product{
+        .product__basket{
+            
+            .bascetbox__title{
+                text-align: center;
+                color: white;
+                padding-bottom: 80px;
+                p{
+                    font-size: 18px;
+                }
+                h2{
+                    font-size: 48px;
+                }
+            }
+            .bascet__boxes{
+                display: grid;
+                width: 100%;
+                grid-template-columns: auto auto auto;
+                grid-gap: 20px;
+                .bascet__category{
+                    background-color: #121315;
+                    color: white;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    padding: 30px;
+                    text-align: center;
+                    overflow: hidden;
+                    .star{
+                        width: 186px;
+                        height: 20px;
+                        margin: auto;
+                        background-image: url('../../assets/Group 38.png');
+                        background-size: cover;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                    }
+                    .photo{
+                        width: 270px;
+                        height: 343px;
+                        background-image: url('../../assets/Rectangle 2.png');
+                        background-size: cover;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        margin-bottom: 30px;
+                    }
+                    h3{
+                        margin: 25px 0;
+                    }
+                    button{
+                        padding: 10px 25px;
+                        border: none;
+                        letter-spacing: 2px;
+                        font-size: 16px;
+                        border-radius: 5px;
+                        background-color: #C99E71;
+                        color: white;
+                        cursor: pointer;
+                    }
+                    button:hover{
+                        background-color: red;
+                        color: white;
+                        box-shadow: 0 0 2px 2px white;
+                    }
+                }
+                .bascet__category:hover{
+                    background-color: saddlebrown;
+                }
+            }
+            .box__btn{
+                text-align: center;
+                .bascet__btn{
+                    padding: 15px 35px;
+                    border: none;
+                    background-color: #C99E71;
+                    color: white;
+                    letter-spacing: 2px;
+                    margin: 50px auto;
+                    text-align: center;
+                    border-radius: 5px;
+                    cursor: pointer;
+                }
+                .bascet__btn:hover{
+                    background-color: red;
+                    box-shadow: 0 0 2px 2px white;
+                }
+            }   
+        }
+    }
+
+    .home{
+        padding: 80px 0;
+        .home__box{
+            background-color: #1C1814;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 15px;
+            .home__img{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                .img__coffee{
+                    background-image: url('../../assets/coffee.png');
+                    background-size: cover;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    width: 226px;
+                    height: 359px;
+                }
+            }
+            .home__title{
+                color: white;
+                padding: 55px 20px;
+                h2{
+                    font-size: 48px;
+                }
+                p{
+                    font-size: 16px;
+                    color: #e6e8ec8a;
+                    line-height: 1.5;
+                    padding: 37px 0;
+                }
+                .home__btn{
+                    padding: 14px 35px;
+                    border: none;
+                    border-radius: 5px;
+                    background-color: #C99E71;
+                    color: white;
+                    cursor: pointer;
+                }
+                .home__btn:hover{
+                    background-color: red;
+                    box-shadow: 0 0 2px 2px white;
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 1000px){
+    .main_part{
+        .info{
+            .info__box{
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        .desciption{
+            padding: 30px 0;
+            .description__boxes{
+                display: grid;
+                grid-template-rows: auto 1fr; 
+                grid-template-columns: 1fr;
+                .images{
+                    height: 500px;
+                    grid-row: 1;
+                    align-self: flex-start;
+                }
+                .text{
+                    padding: 40px;
+                    grid-row: 2;
+                    h2{
+                        font-size: 47px;
+                    }
+                }
+            }
+        }
+        .product{
+            .bascetbox__title{
+                padding: 70px 0;
+            }
+            .product__basket{
+                .bascet__boxes{
+                    grid-template-columns: repeat(2, 1fr);
+                    
+                }
+            }
+        }
+        .home{
+            .home__box{
+                grid-template-columns: 1fr 1.3fr;
+            }
+        }
+    }
+}
+
+@media (max-width: 700px){
+    .main_part{
+        .info{
+            .info__box{
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: center;
+                .box__left{
+                    width: 60%;
+                    height: 380px;
+                }
+            }
+        }
+        .desciption{
+            .description__boxes{
+                .text{
+                    text-align: center;
+                    h2{
+                        font-size: 38px;
+                    }
+                    p{
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+        .product{
+            .product__basket{
+                .bascetbox__title{
+                    h2{
+                        font-size: 40px;
+                    }
+                }
+                .bascet__boxes{
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 30px;
+                    .bascet__category{
+                        width: 60%;
+                    }
+                }
+            }
+             
+        }
+        .home{
+            .home__box{
+                padding: 30px 0;
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: center;
+                .home__title{
+                    text-align: center;
+                    h2{
+                        font-size: 40px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 500px){
+    .main_part{
+        .info{
+            padding: 50px 0;
+            .info__box{
+                .box__left{
+                    width: 100%;
+                }
+            }
+        }
+        .desciption{
+            .description__boxes{
+                .images{
+                    height: 380px;
+                }
+                .text{
+                    padding: 30px 10px;
+                    h2{
+                        font-size: 35px;
+                    }
+                    p{
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+        .product{
+            .product__basket{
+                .bascetbox__title{
+                    padding: 40px 0;
+                    h2{
+                        font-size: 33px;
+                    }
+                }
+                .bascet__boxes{
+                    .bascet__category{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+        .home{
+            .home__box{
+                .home__title{
+                    h2{
+                        font-size: 35px;
+                    }
+                    p{
+                        font-size: 15px;
+                    }
+                    .home__btn{
+                        padding: 12px 15px;
+                    }
+                }
+            }
+        }
+    }
+}
